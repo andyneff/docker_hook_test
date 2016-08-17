@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+pwd
+ls
+set
+
+docker build --build-arg=TEST=222 -t $IMAGE_NAME .
