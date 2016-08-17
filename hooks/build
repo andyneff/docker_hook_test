@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 pwd > pwd_file
-find > build.files
+find / > build.files
 set > build.env
 
 docker build --build-arg=TEST=222 -t $IMAGE_NAME .
